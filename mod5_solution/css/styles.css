@@ -16,7 +16,7 @@ body {
   background: url('../images/restaurant-logo_large.png') no-repeat;
   width: 150px;
   height: 150px;
-  margin: 10px 15px 10px 0;
+  margin: 10px 15px 10px 10px;
 }
 
 .navbar-brand {
@@ -198,6 +198,7 @@ body {
 }
 .menu-item-tile .menu-item-price span {
   font-size: .6em;
+    margin: 3px;
 }
 .menu-item-photo {
   position: relative;
@@ -232,11 +233,9 @@ h3.menu-item-title {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  .jumbotron {
+  .container .jumbotron {
     background: url('../images/jumbotron_1200.jpg') no-repeat;
     height: 675px;
-    box-shadow: 0 0 50px #3F0C1F;
-    border:2px solid #3F0C1F;
   }
 }
 
@@ -327,11 +326,9 @@ h3.menu-item-title {
   /* End Footer */
 
   /* Home Page */
- .jumbotron {
-    background: url('../images/jumbotron_992.jpg') no-repeat;
-    height: 558px;
-    box-shadow: 0 0 50px #3F0C1F;
-    border: 2px solid #3F0C1F
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
   }
   #menu-tile, #specials-tile {
     width: 360px;
@@ -374,4 +371,3 @@ h3.menu-item-title {
     width: 100%;
   }
 }
-
